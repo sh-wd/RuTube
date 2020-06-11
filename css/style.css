@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  color: #fff;
+  background-color: #b300ff;
+}
+
+h1 {
+  text-shadow: 2px 2px 5px #f0d;
+  font-family: 'Stalemate';
+  font-weight: inherit;
+  text-align: center;
+  font-size: 80px;
+}
+
+h2 {
+  font-family: 'Monoton';
+  font-size: 45px;
+  font-weight: inherit;
+  padding-left: 20px;
+}
+
+h3 {
+  padding-left: 60px;
+  font-size: 30px;
+  text-shadow: 2px 2px 5px #f0d;
+  font-family: 'bellota';
+  font-weight: inherit;
+}
+
+header {
+  background: linear-gradient(transparent, #b300ff),
+              #fff url('../dragracelogo.jpg') no-repeat center;
+  background-size: 50%;
+  height: 700px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar {
+  position: absolute;
+  right: 100px;
+}
+
+.links, 
+#totop {
+  font-family: 'bellota';
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 5px #f0d;
+  list-style-type: none;
+}
+
+li {
+  padding-top: 20px;
+}
+
+#logoimg {
+  height: 60px;
+  width: 80px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+#logotext {
+  position: absolute;
+  top: 40px;
+  left: 200px;
+  font-size: 56px;
+  font-family: 'Monoton';
+  color: #f0d;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #fff;
+  text-align: center;
+}
+.grid-item {
+  padding: 15px;
+}
+
+.vidtitle {
+  background-color: #b300ff;
+  color: #fff;
+  font-family: 'bellota';
+  width: auto;
+  box-shadow: 5px 10px 10px #f0d;
+  width: 400px;
+  margin-left: 40px;  
+  border-radius: 5px;
+  margin-top: 30px;
+  padding: 5px;
+}
+
+iframe {
+   box-shadow: 5px 10px 10px #f0d;
+}
+
+iframe:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  box-shadow: 5px 10px 20px #f0d;
+}
+
+.footer {
+  padding-top: 30px;
+  text-align: center;
+  height: 200px;
+  background-image: linear-gradient(#fff, #b300ff);
+}
+
+.footerlink {
+  padding: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+a:hover, 
+.li:hover, 
+.footerlink:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
