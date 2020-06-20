@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota&family=Monoton&family=Stalemate&display=swap');
+
 body {
   margin: 0;
   color: #fff;
@@ -41,7 +43,7 @@ a {
 
 .navbar {
   position: absolute;
-  right: 100px;
+  right: 80px;
 }
 
 .links, 
@@ -62,7 +64,7 @@ li {
   width: 80px;
   position: absolute;
   top: 50px;
-  left: 100px;
+  left: 80px;
 }
 
 #logotext {
@@ -74,14 +76,21 @@ li {
   color: #f0d;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   background-color: #fff;
   text-align: center;
 }
-.grid-item {
+.flex-item {
   padding: 15px;
+}
+
+iframe {
+  width: 400px;
+  height: 225px;
 }
 
 .vidtitle {
@@ -91,7 +100,6 @@ li {
   width: auto;
   box-shadow: 5px 10px 10px #f0d;
   width: 400px;
-  margin-left: 40px;  
   border-radius: 5px;
   margin-top: 30px;
   padding: 5px;
@@ -125,4 +133,96 @@ a:hover,
 .footerlink:hover {
   transform: scale(1.1);
   transition: 1s;
+}
+
+/* for mobile phones */
+
+@media only screen and (max-width: 600px) {
+  
+  body {
+    text-align: center;
+    margin: 0;
+  }
+  
+  header {
+    height: 500px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    padding: 0;
+  }
+  
+  h3 {
+    font-size: 20px;
+    padding: 0;
+  }
+  
+  #logoimg {
+    width: 60px;
+    height: 40px;
+    top: 40px;
+    left: 30px;
+  }
+  
+  #logotext {
+    font-size: 40px;
+    top: 30px;
+    left: 110px;
+  }
+  
+  .navbar {
+    top: 300px;
+    left: 30px;
+  }
+  
+  .links,
+  #totop {
+    font-size: 20px;
+  }
+  
+  .links {
+    text-align: left;
+    padding: 0;
+  }
+  
+  iframe {
+    width: 320px;
+    height: 180px;
+  }
+  
+  .vidtitle {
+    width: 320px;
+  }
+} 
+
+/* for big phones and small tablets */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  
+  body {
+    text-align: center;
+  }
+  
+  #logoimg {
+    left: 60px;
+  }
+  
+  #logotext {
+    left: 160px;
+  }
+  
+  .navbar {
+    top: 400px;
+    left: 60px;
+    text-align: left;
+  }
+  
+  .links {
+    padding: 0;
+  }
 }
